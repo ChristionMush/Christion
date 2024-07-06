@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <style>
+        #about-page{
+        width: 100%;
+        height: 120vh;
+        background-image: url(./background.jpeg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 0;
+    }
+        </style>
+</head>
+<body>
+<div id="about-page">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./logo.png" alt="logo"><!--add company logo-->
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index1.html">About Me</a></li>
+                    <li><a href="./Christion Mushariwa-CV.pdf">My CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+<!-------------------------------------Services-------------------------------------------->
+<div id="services">
+    <div class="container">
+        <div class="service-list">
+            <div>
+                <h2><a href="https://watchandjewelbar.000webhostapp.com/Landing%20page.php">Online Watch Store</a></h2>
+                <p>Technologies used:
+                    <br>• Javascript • CSS • HTML • PHP
+                    <br>
+                    <br>Database:
+                    <br>• phpMyAdmin • SQL
+                </p><!--Add details-->
+            </div>
+            <div>
+                <h2><a href="">AI Image Converter</a></h2>
+                <p>Technologies used:
+                    <br>• Javascript • CSS • HTML • React
+                    <br>
+                    <br>Database:
+                    <br>• N/A
+                </p><!--Add details-->
+            </div>
+            <div>
+                <h2><a href="">To-DO-List</a></h2>
+                <p>Technologies used:
+                    <br>• Javascript • CSS • HTML
+                    <br>
+                    <br>Database:
+                    <br>• N/A
+                </p>
+            </div>
+        </div>
+        <div class="center-container">
+        <button class="styled-button">Repository</button>
+        </div>
+
+    </div>
+</div>
+</div>
+<!---------------------------Contacts-------------------------------------->
+<div id="contact" class="copyright">
+    <p><i class="fas fa-paper-plane"></i>christionmushariwa@gmail.com</p>
+    <p><i class="fas fa-phone-square-alt"></i>+27 63 013 9928</p>
+    <br>
+    <p>copyright © Christion Mushariwa.</p>
+</div>
+</body>
+</html>

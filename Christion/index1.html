@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>About</title>
+    <style>
+        #about-page{
+        width: 100%;
+        height: 120vh;
+        background-image: url(./background.jpeg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 0;
+    }
+        </style>
+</head>
+<body>
+<div id="about-page">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./logo.png" alt="logo"><!--add company logo-->
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Portfolio</a></li>
+                    <li><a href="./Christion Mushariwa-CV.pdf">My CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+     <!-------------------------about------------------------>
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./User.jpeg" > <!-- insert a user image jpeg or png -->
+
+                </div>
+                <div id="service-list" class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a graduate <span>Software Engineer</span> with a affinity for front-end and Back-end Engineering</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming and Development</span><br>Proficient in multiple programming languages (e.g. Java, Python) and development methodologies (Scrum etc).</li>
+                            <li><span>Data Structures, Algorithms, and Databases</span><br>Strong foundation in data structures, algorithms, and database management (SQL).</li>
+                            <li><span>Web and Mobile Development</span><br>Skills in developing web and mobile applications, including front-end and back-end technologies.</li>
+                            <li><span>Software Design and System Architecture</span><br>Knowledge of software design principles, scalable architecture, and use of design patterns.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Bsc in Software Engineering</li>
+                            <li><span>2019</span><br>A-Level</li>
+                            <li><span>2017</span><br>O-level</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!---------------------------Contacts-------------------------------------->
+    <div id="contact" class="copyright">
+        <p><i class="fas fa-paper-plane"></i>christionmushariwa@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>+27 63 013 9928</p>
+        <br>
+        <p>copyright © Christion Mushariwa.</p>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
